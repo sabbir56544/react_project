@@ -12,6 +12,8 @@ import ChooseDetails from './Components/ChooseDetails';
 import Count from './Components/State/Count';
 import Country from './Components/State/Country';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CountryDetail from './Components/State/CountryDetail';
+import ServiceDetail from './Components/ServiceDetail';
 
 function App() {
   return (
@@ -22,11 +24,13 @@ function App() {
         <Route path="/" element={<Hero year="20" />}  />
         <Route path="/about" element={<About />} />
         <Route path="/chooseus" element={<ChooseUs />} />
-        <Route path="/chooseus/:id" element={<ChooseDetails />} />
+        <Route path="/chooseus/:title" element={<ChooseDetails />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/service/:title" element={<ServiceDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/usestate" element={<Count />} />
         <Route path="/useffect" element={<Country />} />
+        <Route path="/useffect/:name" element={<CountryDetail />} />
         <Route path="*" element={<Error />} />
         
       </Routes>

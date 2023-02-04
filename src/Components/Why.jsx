@@ -10,7 +10,7 @@ const Why = (props) => {
 						<div className="choose-icon">
 							<img src={props.icon} alt="" />
 						</div>
-						<h3 className="title"><Link to={'/chooseus/' + props.id}>{props.title}</Link></h3>
+						<h3 className="title"><Link to={'/chooseus/' + props.title}>{props.title}</Link></h3>
 						<div className="text">
 							{props.text}
 						</div>
