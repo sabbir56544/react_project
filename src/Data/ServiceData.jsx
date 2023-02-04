@@ -27,7 +27,7 @@ const ServiceData = [
 	},
 	{
 		id: 5,
-		title: '24/7 Online Help',
+		title: 'Online Help',
 		icon: 'images/resource/s3.png',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.',
 	},

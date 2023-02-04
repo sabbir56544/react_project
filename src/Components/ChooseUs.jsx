@@ -25,7 +25,7 @@ function ChooseUs() {
 							WhyData.map((val, ind) => {
 								return (
 									<>
-										<Why title={val.title} icon={val.icon} text={val.text}  />
+										<Why title={val.title} icon={val.icon} text={val.text} key={ind} />
 									</>
 								)
 							})

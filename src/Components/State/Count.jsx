@@ -5,14 +5,19 @@ const Count = () => {
 	const [count, setCount] = useState(0);
 	const increaseCount = () => {
 		const newCount = count + 1;
-		setCount(newCount);
+		if (newCount > 10) {
+			alert('count is greater than 10');
+		}
+		else {
+			setCount(newCount);
+		}
 	}
 	const decreaseCount = () => {
 		const dCount = count - 1;
 		setCount(dCount);
 	}
 
-	
+
 	return (
 		<>
 			<section className="why-choose mt-5">

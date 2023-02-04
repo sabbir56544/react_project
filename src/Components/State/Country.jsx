@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Country = () => {
@@ -27,7 +28,7 @@ const Country = () => {
 													<div className="service-icon">
 														<img src={val.flags.png} alt="" style={{'height' : 30}} />
 													</div>
-													<h3 className="title"><a href="#">{val.name.common}</a></h3>
+													<h3 className="title"><Link to={'/useffect/' + val.name.common}>{val.name.common}</Link></h3>
 													<div className="text">
 														Capital - {val.capital} <br />
 														Population - {val.population}

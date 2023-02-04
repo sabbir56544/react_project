@@ -37,9 +37,9 @@ const Contact = () => {
 									<a className="submit-btn" href="#">Send Message</a>
 								</div>
 								
-								<button>
+								{/* <button>
 								<Link to="/" className="btn btn-primary btn-sm btn-block">Go Back Homepage</Link>
-								</button>
+								</button> */}
 							</form>
 						</div>
 					</div>

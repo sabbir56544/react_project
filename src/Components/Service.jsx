@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceData from '../Data/ServiceData'
+import S from './S'
 
 function Service() {
   return (
@@ -16,19 +17,7 @@ function Service() {
               ServiceData.map((val, ind) => {
                 return (
                   <>
-                    <div className="col-lg-4 col-sm-6" key={ind}>
-                      <div className="servicebox">
-                        <div className="service-content">
-                          <div className="service-icon">
-                            <img src={val.icon} alt="" />
-                          </div>
-                          <h3 className="title"><a href="#">{val.title}</a></h3>
-                          <div className="text">
-                            {val.text}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <S icon={val.icon} title={val.title} text={val.text} key={ind} />
                   </>
                 );
               })
